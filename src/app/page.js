@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import Dither from "@/blocks/Backgrounds/Dither/Dither"; // Adjust path if needed
+import ShinyText from '../components/ShinyText';
+import Link from 'next/link'; // If using Next.js
 
 export default function Home() {
   return (
@@ -21,9 +23,30 @@ export default function Home() {
       </div>
 
       {/* Main Content */}
-      <main className="relative z-10 flex flex-col gap-8 items-center justify-center w-full max-w-2xl p-6 sm:p-12 pointer-events-none">
-        <h1 className="text-white text-4xl sm:text-5xl font-bold text-center pointer-events-auto">Ismail Abbasi</h1>
-        {/* Your content goes here */}
+    <main className="relative z-10 flex flex-col gap-8 items-center justify-center w-full max-w-2xl p-6 sm:p-12 pointer-events-none">
+  <div className="absolute left-[15%] top-1/2 transform -translate-y-1/2 w-fit max-w-full align-middle max-h-[90%] flex flex-col gap-2 text-zone">
+    <span className="text-[40px] font-semibold text-gray-200 whitespace-nowrap">
+      I am Ismail Abbasi
+    </span>
+    <span className="text-[34px] font-medium text-gray-200">
+      Full Stack Developer.
+    </span>
+          <p className="text-[13px] text-white font-mono font-light min-w-fit animate-pulse mb-4">
+            Check out my resume below!
+          </p>
+          <Link
+            href="https://drive.google.com/file/d/1yuYWYXCA4wW0b9ZrEtTqRD3wja1t5SfE/view?usp=sharing"
+            className="pointer-events-auto px-6 py-3 rounded-xl bg-black/40 backdrop-blur-3xl border border-white/[0.08] shadow-[0_4px_16px_0_rgba(0,0,0,0.4)] font-semibold text-base transition-all duration-300 hover:bg-white/[0.05] hover:text-white hover:shadow-[0_4px_16px_0_rgba(255,255,255,0.08)]"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ShinyText
+              text="Download My Resume"
+              speed={3}
+              className="text-gray-200"
+            />
+          </Link>
+        </div>
       </main>
     </div>
   );
