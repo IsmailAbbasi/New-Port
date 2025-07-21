@@ -1,6 +1,5 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 
 // You can use any icon library, but here are simple SVG components for demonstration
 const CodeIcon = (props) => (
@@ -25,18 +24,14 @@ const MenuIcon = (props) => (
   <svg
     {...props}
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
+    width="32"
+    height="32"
+    viewBox="0 0 32 32"
     fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
   >
-    <line x1="4" x2="20" y1="12" y2="12" />
-    <line x1="4" x2="20" y1="6" y2="6" />
-    <line x1="4" x2="20" y1="18" y2="18" />
+    <rect x="6" y="9" width="20" height="2.5" rx="1.25" fill="currentColor" />
+    <rect x="6" y="15" width="20" height="2.5" rx="1.25" fill="currentColor" />
+    <rect x="6" y="21" width="20" height="2.5" rx="1.25" fill="currentColor" />
   </svg>
 );
 
@@ -53,7 +48,7 @@ const XIcon = (props) => (
     strokeLinecap="round"
     strokeLinejoin="round"
   >
-    <path d="M18 6 6 18" />
+    <path d="m18 6-12 12" />
     <path d="m6 6 12 12" />
   </svg>
 );
@@ -71,11 +66,22 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    setIsOpen(false);
+  };
+
   const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/projects', label: 'Projects' },
-    { href: '/contact', label: 'Contact' },
+    { href: 'home', label: 'Home' },
+    { href: 'about', label: 'About' },
+    { href: 'projects', label: 'Projects' },
+    { href: 'contact', label: 'Contact' },
   ];
 
   return (
@@ -95,26 +101,26 @@ export default function Navbar() {
       >
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-3 text-white font-bold text-xl group">
+          <button onClick={() => scrollToSection('home')} className="flex items-center gap-3 text-white font-bold text-xl group">
             <div className="p-2 rounded-xl bg-white/[0.05] backdrop-blur-sm border border-white/[0.08] group-hover:bg-white/[0.08] transition-all duration-300 group-hover:shadow-[0_4px_12px_0_rgba(255,255,255,0.1)]">
               <CodeIcon className="w-5 h-5" />
             </div>
             <span className="font-mono bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
               MyPortfolio
             </span>
-          </a>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-2">
             {navLinks.map((link, index) => (
-              <Link
+              <button
                 key={link.label}
-                href={link.href}
+                onClick={() => scrollToSection(link.href)}
                 className="relative px-5 py-2.5 text-gray-300 hover:text-white rounded-xl transition-all duration-300 group overflow-hidden hover:bg-white/[0.05] hover:backdrop-blur-sm hover:shadow-[0_4px_16px_0_rgba(255,255,255,0.05)] before:absolute before:inset-0 before:rounded-xl before:bg-gradient-to-r before:from-transparent before:via-white/[0.02] before:to-transparent before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <span className="relative z-10">{link.label}</span>
-              </Link>
+              </button>
             ))}
           </div>
 
@@ -135,10 +141,9 @@ export default function Navbar() {
         }`}>
           <div className="flex flex-col gap-3 p-4 rounded-xl bg-black/20 backdrop-blur-2xl border border-white/[0.05]">
             {navLinks.map((link, index) => (
-              <Link
+              <button
                 key={link.label}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
+                onClick={() => scrollToSection(link.href)}
                 className="relative w-full text-center px-5 py-4 text-gray-300 hover:text-white bg-white/[0.02] hover:bg-white/[0.05] rounded-lg transition-all duration-300 border border-white/[0.03] hover:border-white/[0.08] hover:backdrop-blur-sm hover:shadow-[0_4px_16px_0_rgba(255,255,255,0.05)] transform hover:scale-[1.02] active:scale-[0.98]"
                 style={{ 
                   animationDelay: `${index * 100}ms`,
@@ -146,7 +151,7 @@ export default function Navbar() {
                 }}
               >
                 <span className="relative z-10">{link.label}</span>
-              </Link>
+              </button>
             ))}
           </div>
         </div>
