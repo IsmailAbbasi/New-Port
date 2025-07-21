@@ -7,12 +7,13 @@ import ShinyText from '../../components/ShinyText';
 import Link from 'next/link'; // If using Next.js
 import VariableProximity from '../../components/VariableProximity';
 import { useRef } from 'react';
+import Footer from '../../components/Footer';
 
 export default function Home() {
   const containerRef = useRef(null);
 
   return (
-    <div className="relative font-sans min-h-screen flex items-center justify-center overflow-x-hidden">
+    <div className="relative font-sans min-h-screen flex flex-col overflow-x-hidden">
       <div style={{ width: '100%', height: '100vh', position: 'fixed', top: 0, left: 0, zIndex: 0 }}>
         <Dither
           waveColor={[0.5, 0.5, 0.5]}
@@ -100,6 +101,8 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <Footer />
+
     </div>
   );
 }
