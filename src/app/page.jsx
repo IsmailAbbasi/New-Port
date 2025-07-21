@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="relative font-sans min-h-screen flex flex-col overflow-x-hidden">
       <div style={{ width: '100%', height: '100vh', position: 'fixed', top: 0, left: 0, zIndex: 0 }}>
-        <Dither
+        {/* <Dither
           waveColor={[0.5, 0.5, 0.5]}
           disableAnimation={false}
           enableMouseInteraction={true}
@@ -24,7 +24,19 @@ export default function Home() {
           waveAmplitude={0.3}
           waveFrequency={3}
           waveSpeed={0.05}
-        />
+        /> */}
+
+
+<Dither
+  waveColor={[0.5, 0.5, 0.5]}
+  disableAnimation={false}
+  enableMouseInteraction={true}
+  mouseRadius={0.3}          
+  colorNum={4}
+  waveAmplitude={0.3}     
+  waveFrequency={2}        
+  waveSpeed={0.08}             
+/>
       </div>
 
       {/* Home Section */}

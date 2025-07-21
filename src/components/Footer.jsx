@@ -4,7 +4,7 @@ export default function Footer() {
         <h3 className="text-gray-200 text-base font-bold mb-1 text-center">Connect With Me</h3>
         <div className="flex gap-3 justify-center items-center">
           <a
-            href="https://x.com/yourusername"
+            href="https://x.com/ismailisonmoon"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full border border-white/10 bg-white/5 backdrop-blur-lg p-1.5 flex items-center justify-center transition hover:bg-white/20 hover:border-white/30"
@@ -15,7 +15,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="https://instagram.com/yourusername"
+            href="https://www.instagram.com/ismailisonmoon/"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full border border-white/10 bg-white/5 backdrop-blur-lg p-1.5 flex items-center justify-center transition hover:bg-white/20 hover:border-white/30"
@@ -26,7 +26,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/mohd-ismail-abbasi-bba550228/"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full border border-white/10 bg-white/5 backdrop-blur-lg p-1.5 flex items-center justify-center transition hover:bg-white/20 hover:border-white/30"
@@ -37,7 +37,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/IsmailAbbasi"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full border border-white/10 bg-white/5 backdrop-blur-lg p-1.5 flex items-center justify-center transition hover:bg-white/20 hover:border-white/30"
