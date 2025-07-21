@@ -1,11 +1,11 @@
 'use client';
 import dynamic from 'next/dynamic';
-const RotatingText = dynamic(() => import('../components/RotatingText'), { ssr: false });
+const RotatingText = dynamic(() => import('../../components/RotatingText'), { ssr: false });
 import Image from "next/image";
 import Dither from "@/blocks/Backgrounds/Dither/Dither"; // Adjust path if needed
-import ShinyText from '../components/ShinyText';
+import ShinyText from '../../components/ShinyText';
 import Link from 'next/link'; // If using Next.js
-import VariableProximity from '../components/VariableProximity';
+import VariableProximity from '../../components/VariableProximity';
 import { useRef } from 'react';
 
 export default function Home() {

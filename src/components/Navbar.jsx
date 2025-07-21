@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 // You can use any icon library, but here are simple SVG components for demonstration
 const CodeIcon = (props) => (
@@ -71,10 +72,10 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { href: '#', label: 'Home' },
-    { href: '#', label: 'About' },
-    { href: '#', label: 'Projects' },
-    { href: '#', label: 'Contact' },
+    { href: '/', label: 'Home' },
+    { href: '/about', label: 'About' },
+    { href: '/projects', label: 'Projects' },
+    { href: '/contact', label: 'Contact' },
   ];
 
   return (
@@ -106,14 +107,14 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-2">
             {navLinks.map((link, index) => (
-              <a
+              <Link
                 key={link.label}
                 href={link.href}
                 className="relative px-5 py-2.5 text-gray-300 hover:text-white rounded-xl transition-all duration-300 group overflow-hidden hover:bg-white/[0.05] hover:backdrop-blur-sm hover:shadow-[0_4px_16px_0_rgba(255,255,255,0.05)] before:absolute before:inset-0 before:rounded-xl before:bg-gradient-to-r before:from-transparent before:via-white/[0.02] before:to-transparent before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <span className="relative z-10">{link.label}</span>
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -134,7 +135,7 @@ export default function Navbar() {
         }`}>
           <div className="flex flex-col gap-3 p-4 rounded-xl bg-black/20 backdrop-blur-2xl border border-white/[0.05]">
             {navLinks.map((link, index) => (
-              <a
+              <Link
                 key={link.label}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
@@ -145,7 +146,7 @@ export default function Navbar() {
                 }}
               >
                 <span className="relative z-10">{link.label}</span>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
