@@ -95,7 +95,7 @@ export default function Navbar() {
       >
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 text-white font-bold text-xl group">
+          <a href="/" className="flex items-center gap-3 text-white font-bold text-xl group">
             <div className="p-2 rounded-xl bg-white/[0.05] backdrop-blur-sm border border-white/[0.08] group-hover:bg-white/[0.08] transition-all duration-300 group-hover:shadow-[0_4px_12px_0_rgba(255,255,255,0.1)]">
               <CodeIcon className="w-5 h-5" />
             </div>
