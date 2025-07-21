@@ -34,7 +34,7 @@ export default function Home() {
               <span className="font-semibold text-gray-200">Examinate AI - Exam Preparation App</span><br />
               <span className="text-gray-300">ExaminateAI generates personalized practice exams, provides instant feedback, and helps you improve your knowledge in any academic field. The smartest way to prepare for tests, examinations, and certifications.</span>
               <br />
-              <Link href="https://examinateai.com/" className="text-blue-400 underline pointer-events-auto" target="_blank" rel="noopener noreferrer">
+              <Link href="https://examinateai.com/" className="text-gray-200 underline pointer-events-auto" target="_blank" rel="noopener noreferrer">
                 Check out Examinate AI
               </Link>
             </li>
@@ -42,7 +42,7 @@ export default function Home() {
               <span className="font-semibold text-gray-200">Netflic</span><br />
               <span className="text-gray-300">Movie recommendation app made by using ReactJs.</span>
               <br />
-              <Link href="https://netflic.netlify.app/" className="text-blue-400 underline pointer-events-auto" target="_blank" rel="noopener noreferrer">
+              <Link href="https://netflic.netlify.app/" className="text-gray-200 underline pointer-events-auto" target="_blank" rel="noopener noreferrer">
                 Check out Netflic
               </Link>
             </li>
@@ -50,7 +50,7 @@ export default function Home() {
               <span className="font-semibold text-gray-200">Movie Rating</span><br />
               <span className="text-gray-300">Movie rating app made by ReactJS.</span>
               <br />
-              <Link href="https://usepopcorn-ebon.vercel.app/" className="text-blue-400 underline pointer-events-auto" target="_blank" rel="noopener noreferrer">
+              <Link href="https://usepopcorn-ebon.vercel.app/" className="text-gray-200 underline pointer-events-auto" target="_blank" rel="noopener noreferrer">
                 Check out Movie Rating
               </Link>
             </li>
@@ -58,7 +58,7 @@ export default function Home() {
               <span className="font-semibold text-gray-200">KeyCryptor</span><br />
               <span className="text-gray-300">A Password Manager App made using Django and SQLite.</span>
               <br />
-              <Link href="https://keycryptor-926c7cc2b1ab.herokuapp.com/signup/" className="text-blue-400 underline pointer-events-auto" target="_blank" rel="noopener noreferrer">
+              <Link href="https://keycryptor-926c7cc2b1ab.herokuapp.com/signup/" className="text-gray-200 underline pointer-events-auto" target="_blank" rel="noopener noreferrer">
                 Check out KeyCryptor
               </Link>
             </li>
@@ -66,7 +66,7 @@ export default function Home() {
               <span className="font-semibold text-gray-200">Medicine Records</span><br />
               <span className="text-gray-300">A Medicine Records App made using Django and SQLite.</span>
               <br />
-              <Link href="https://medicine-records-app.onrender.com/" className="text-blue-400 underline pointer-events-auto" target="_blank" rel="noopener noreferrer">
+              <Link href="https://medicine-records-app.onrender.com/" className="text-gray-200 underline pointer-events-auto" target="_blank" rel="noopener noreferrer">
                 Check out Medicine Records
               </Link>
             </li>
