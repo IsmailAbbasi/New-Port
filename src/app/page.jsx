@@ -34,7 +34,7 @@ export default function Home() {
   mouseRadius={0.3}          
   colorNum={4}
   waveAmplitude={0.3}     
-  waveFrequency={2}        
+  waveFrequency={3}        
   waveSpeed={0.08}             
 />
       </div>
