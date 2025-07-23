@@ -101,107 +101,135 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="relative z-10 flex flex-col items-start justify-start w-full max-w-2xl px-4 sm:px-8 pt-32 sm:pt-40 pb-8 sm:pb-16 min-h-screen overflow-x-hidden" style={{ pointerEvents: 'none' }}>
-        <div className="w-full max-w-xl flex flex-col gap-6 items-start">
-          <h2 className="text-[28px] sm:text-[36px] font-bold text-gray-200 mb-6">About Me</h2>
-          <p className="text-gray-300 text-base mb-4">
-            I am a Full Stack Developer with a strong foundation in React.js and Django, recently graduated with a B.Tech in Computer Science and Engineering from Jamia Hamdard University, New Delhi (July 2025). I am currently exploring exciting opportunities where I can learn, grow, and make an impact through code.
-          </p>
-          <div className="mb-4">
-            <span className="font-semibold text-gray-200">Technical Skills:</span>
-            <ul className="list-disc ml-6 text-gray-300">
-              <li>Frontend: React.js, HTML5, CSS3, JavaScript</li>
-              <li>Backend: Python, Django</li>
-              <li>Version Control: Git, GitHub</li>
-              <li>Other: APIs, JSON, Bootstrap</li>
-            </ul>
-          </div>
-          <div>
-            <span className="font-semibold text-gray-200">Some hobbies :P</span>
-            <ul className="list-disc ml-6 text-gray-300">
-              <li>Sports</li>
-              <li>Tech</li>
-              <li>Photography</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      <section
+  id="about"
+  className="relative z-10 flex flex-col items-start justify-start w-full max-w-2xl px-4 sm:px-8 pt-32 sm:pt-40 pb-8 sm:pb-16 min-h-screen overflow-x-hidden"
+  style={{ pointerEvents: 'none' }}
+>
+  <div className="w-full max-w-xl flex flex-col gap-8 items-start">
+    <h2 className="text-[32px] sm:text-[44px] font-extrabold text-white mb-6 tracking-tight leading-tight font-sans">
+      About Me
+    </h2>
+    <p className="text-gray-200 text-lg sm:text-xl font-medium mb-6 leading-relaxed font-sans">
+      I am a <span className="font-bold text-white">Full Stack Developer</span> with a strong foundation in <span className="font-bold text-white">React.js</span> and <span className="font-bold text-white">Django</span>, recently graduated with a B.Tech in Computer Science and Engineering from Jamia Hamdard University, New Delhi (July 2025). I am currently exploring exciting opportunities where I can learn, grow, and make an impact through code.
+    </p>
+    <div className="mb-6">
+      <span className="font-bold text-white text-lg">Technical Skills:</span>
+      <ul className="list-disc ml-8 text-gray-200 text-base sm:text-lg font-semibold mt-2">
+        <li>Frontend: React.js, HTML5, CSS3, JavaScript</li>
+        <li>Backend: Python, Django</li>
+        <li>Version Control: Git, GitHub</li>
+        <li>Other: APIs, JSON, Bootstrap</li>
+      </ul>
+    </div>
+    <div>
+      <span className="font-bold text-white text-lg">Some hobbies </span>
+      <ul className="list-disc ml-8 text-gray-200 text-base sm:text-lg font-semibold mt-2">
+        <li>Sports</li>
+        <li>Tech</li>
+        <li>Photography</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-      {/* Projects Section */}
-      <section id="projects" className="relative z-10 flex flex-col items-start justify-start w-full max-w-2xl px-4 sm:px-8 pt-32 sm:pt-40 pb-8 sm:pb-16 min-h-screen overflow-x-hidden" style={{ pointerEvents: 'none' }}>
-        <div className="w-full max-w-xl flex flex-col gap-6 items-start">
-          <h2 className="text-[28px] sm:text-[36px] font-bold text-gray-200 mb-2">MY PROJECTS</h2>
-          <p className="text-gray-300 text-base mb-4">
-            These are some of the projects that I have worked upon
-          </p>
-          <ul className="flex flex-col gap-4">
-            <li>
-              <span className="font-semibold text-gray-200">Examinate AI - Exam Preparation App</span><br />
-              <span className="text-gray-300">ExaminateAI generates personalized practice exams, provides instant feedback, and helps you improve your knowledge in any academic field. The smartest way to prepare for tests, examinations, and certifications.</span>
-              <br />
-              <Link href="https://examinateai.com/" className="text-gray-200 underline pointer-events-auto" target="_blank" rel="noopener noreferrer">
-                Check out Examinate AI
-              </Link>
-            </li>
-            <li>
-              <span className="font-semibold text-gray-200">Netflic</span><br />
-              <span className="text-gray-300">Movie recommendation app made by using ReactJs.</span>
-              <br />
-              <Link href="https://netflic.netlify.app/" className="text-gray-200 underline pointer-events-auto" target="_blank" rel="noopener noreferrer">
-                Check out Netflic
-              </Link>
-            </li>
-            <li>
-              <span className="font-semibold text-gray-200">Movie Rating</span><br />
-              <span className="text-gray-300">Movie rating app made by ReactJS.</span>
-              <br />
-              <Link href="https://usepopcorn-ebon.vercel.app/" className="text-gray-200 underline pointer-events-auto" target="_blank" rel="noopener noreferrer">
-                Check out Movie Rating
-              </Link>
-            </li>
-            <li>
-              <span className="font-semibold text-gray-200">KeyCryptor</span><br />
-              <span className="text-gray-300">A Password Manager App made using Django and SQLite.</span>
-              <br />
-              <Link href="https://keycryptor-926c7cc2b1ab.herokuapp.com/signup/" className="text-gray-200 underline pointer-events-auto" target="_blank" rel="noopener noreferrer">
-                Check out KeyCryptor
-              </Link>
-            </li>
-            <li>
-              <span className="font-semibold text-gray-200">Medicine Records</span><br />
-              <span className="text-gray-300">A Medicine Records App made using Django and SQLite.</span>
-              <br />
-              <Link href="https://medicine-records-app.onrender.com/" className="text-gray-200 underline pointer-events-auto" target="_blank" rel="noopener noreferrer">
-                Check out Medicine Records
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </section>
+{/* Projects Section */}
+<section
+  id="projects"
+  className="relative z-10 flex flex-col items-start justify-start w-full max-w-2xl px-4 sm:px-8 pt-32 sm:pt-40 pb-8 sm:pb-16 min-h-screen overflow-x-hidden"
+  style={{ pointerEvents: 'none' }}
+>
+  <div className="w-full max-w-xl flex flex-col gap-8 items-start">
+    <h2 className="text-[32px] sm:text-[44px] font-extrabold text-white mb-4 tracking-tight leading-tight font-sans">
+      My Projects
+    </h2>
+    <p className="text-gray-200 text-lg sm:text-xl font-medium mb-6 leading-relaxed font-sans">
+      Here are some of the projects I have worked on:
+    </p>
+    <ul className="flex flex-col gap-6">
+      <li>
+        <span className="font-bold text-white text-lg">Examinate AI - Exam Preparation App</span><br />
+        <span className="text-gray-200 text-base sm:text-lg font-normal">
+          ExaminateAI generates personalized practice exams, provides instant feedback, and helps you improve your knowledge in any academic field. The smartest way to prepare for tests, examinations, and certifications.
+        </span>
+        <br />
+        <Link href="https://examinateai.com/" className="text-blue-300 underline font-semibold pointer-events-auto" target="_blank" rel="noopener noreferrer">
+          Check out Examinate AI
+        </Link>
+      </li>
+      <li>
+        <span className="font-bold text-white text-lg">Netflic</span><br />
+        <span className="text-gray-200 text-base sm:text-lg font-normal">
+          Movie recommendation app made using ReactJs.
+        </span>
+        <br />
+        <Link href="https://netflic.netlify.app/" className="text-blue-300 underline font-semibold pointer-events-auto" target="_blank" rel="noopener noreferrer">
+          Check out Netflic
+        </Link>
+      </li>
+      <li>
+        <span className="font-bold text-white text-lg">Movie Rating</span><br />
+        <span className="text-gray-200 text-base sm:text-lg font-normal">
+          Movie rating app made by ReactJS.
+        </span>
+        <br />
+        <Link href="https://usepopcorn-ebon.vercel.app/" className="text-blue-300 underline font-semibold pointer-events-auto" target="_blank" rel="noopener noreferrer">
+          Check out Movie Rating
+        </Link>
+      </li>
+      <li>
+        <span className="font-bold text-white text-lg">KeyCryptor</span><br />
+        <span className="text-gray-200 text-base sm:text-lg font-normal">
+          A Password Manager App made using Django and SQLite.
+        </span>
+        <br />
+        <Link href="https://keycryptor-926c7cc2b1ab.herokuapp.com/signup/" className="text-blue-300 underline font-semibold pointer-events-auto" target="_blank" rel="noopener noreferrer">
+          Check out KeyCryptor
+        </Link>
+      </li>
+      <li>
+        <span className="font-bold text-white text-lg">Medicine Records</span><br />
+        <span className="text-gray-200 text-base sm:text-lg font-normal">
+          A Medicine Records App made using Django and SQLite.
+        </span>
+        <br />
+        <Link href="https://medicine-records-app.onrender.com/" className="text-blue-300 underline font-semibold pointer-events-auto" target="_blank" rel="noopener noreferrer">
+          Check out Medicine Records
+        </Link>
+      </li>
+    </ul>
+  </div>
+</section>
 
-      {/* Contact Section */}
-      <section id="contact" className="relative z-10 flex flex-col items-start justify-start w-full max-w-2xl px-4 sm:px-8 pt-32 sm:pt-40 pb-8 sm:pb-16 min-h-screen overflow-x-hidden" style={{ pointerEvents: 'none' }}>
-        <div className="w-full max-w-xl flex flex-col gap-6 items-start">
-          <h2 className="text-[28px] sm:text-[36px] font-bold text-gray-200 mb-6">Contact Me</h2>
-          <p className="text-gray-300 text-base mb-4">
-            Let's connect! Feel free to reach out to me through any of the platforms below.
-          </p>
-          <div className="flex flex-col gap-4">
-            <div>
-              <span className="font-semibold text-gray-200">Email:</span>
-              <p className="text-gray-300">ismailabbasi118@gmail.com</p>
-            </div>
-            <div>
-              <span className="font-semibold text-gray-200">Phone:</span>
-              <p className="text-gray-300">+91 XXXXXXXXXX</p>
-            </div>
-            <div>
-              <span className="font-semibold text-gray-200">Location:</span>
-              <p className="text-gray-300">New Delhi, India</p>
-            </div>
-          </div>
-        </div>
-      </section>
+{/* Contact Section */}
+<section
+  id="contact"
+  className="relative z-10 flex flex-col items-start justify-start w-full max-w-2xl px-4 sm:px-8 pt-32 sm:pt-40 pb-8 sm:pb-16 min-h-screen overflow-x-hidden"
+  style={{ pointerEvents: 'none' }}
+>
+  <div className="w-full max-w-xl flex flex-col gap-8 items-start">
+    <h2 className="text-[32px] sm:text-[44px] font-extrabold text-white mb-6 tracking-tight leading-tight font-sans">
+      Contact Me
+    </h2>
+    <p className="text-gray-200 text-lg sm:text-xl font-medium mb-6 leading-relaxed font-sans">
+      Let's connect! Feel free to reach out to me through any of the platforms below.
+    </p>
+    <div className="flex flex-col gap-6">
+      <div>
+        <span className="font-bold text-white text-lg">Email:</span>
+        <p className="text-gray-200 text-base sm:text-lg font-semibold">ismailabbasi118@gmail.com</p>
+      </div>
+      <div>
+        <span className="font-bold text-white text-lg">Phone:</span>
+        <p className="text-gray-200 text-base sm:text-lg font-semibold">+91 XXXXXXXXXX</p>
+      </div>
+      <div>
+        <span className="font-bold text-white text-lg">Location:</span>
+        <p className="text-gray-200 text-base sm:text-lg font-semibold">New Delhi, India</p>
+      </div>
+    </div>
+  </div>
+</section>
 
       <Footer />
     </div>
