@@ -158,6 +158,16 @@ export default function Home() {
         </Link>
       </li>
       <li>
+        <span className="font-bold text-white text-lg">CricStack - Cricket Scoring App</span><br />
+        <span className="text-gray-200 text-base sm:text-lg font-normal">
+          CricStack is a cricket scoring app that allows users to keep track of scores, player statistics, and match details in real-time. Perfect for cricket enthusiasts and scorers.
+        </span>
+        <br />
+        <Link href="http://cricstack.in/" className="text-blue-300 underline font-semibold pointer-events-auto" target="_blank" rel="noopener noreferrer">
+          Check out CricStack
+        </Link>
+      </li>
+      <li>
         <span className="font-bold text-white text-lg">Netflic</span><br />
         <span className="text-gray-200 text-base sm:text-lg font-normal">
           Movie recommendation app made using ReactJs.
